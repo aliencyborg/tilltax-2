@@ -20,6 +20,10 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    DS: {
+      host: process.env.API_HOST || 'http://localhost:4000'
     }
   };
 
@@ -45,6 +49,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+    ENV.DS.host = 'https://api.tilltax.com';
   }
 
   return ENV;
