@@ -1,0 +1,27 @@
+@import 'tailwind';
+
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+@responsive {
+  .text-6xl {
+    font-size: 4rem;
+  }
+  .text-7xl {
+    font-size: 5rem;
+  }
+  .text-8xl {
+    font-size: 6rem;
+  }
+}
+
+.text-6xl {
+  font-size: 4rem;
+}
+.text-7xl {
+  font-size: 5rem;
+}
+.text-8xl {
+  font-size: 6rem;
+}

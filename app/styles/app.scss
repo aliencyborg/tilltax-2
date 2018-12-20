@@ -1,7 +1,18 @@
 @import 'tailwind';
+@import 'tailwind-custom';
+@import 'fonts';
+
+html {
+  body {
+    a, a:hover {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
 
 div#application {
-    background-color: lightblue;
-    display: grid;
-    height: 100vh;
+  background-color: white;
+  display: grid;
+  height: 100vh;
 }
