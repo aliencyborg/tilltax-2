@@ -1,2 +1,7 @@
 @import 'tailwind';
 
+div#application {
+    background-color: lightblue;
+    display: grid;
+    height: 100vh;
+}
