@@ -51,4 +51,4 @@ export default {
     'Courier New',
     'monospace'
   ]
-};
+}

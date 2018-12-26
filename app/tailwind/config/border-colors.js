@@ -1,4 +1,4 @@
-import colors from './colors';
+import colors from './colors'
 
 /*
 |-----------------------------------------------------------------------------
@@ -17,4 +17,4 @@ import colors from './colors';
 |
 */
 
-export default Object.assign({ default: colors['grey-light'] }, colors);
+export default Object.assign({ default: colors['grey-light'] }, colors)

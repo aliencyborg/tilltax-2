@@ -15,4 +15,4 @@
 export default {
   '0': '0',
   full: '100%'
-};
+}

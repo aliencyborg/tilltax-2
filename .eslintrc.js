@@ -4,31 +4,29 @@ module.exports = {
     ecmaVersion: 2017,
     sourceType: 'module'
   },
-  plugins: [
-    'ember'
-  ],
+  plugins: ['ember'],
   extends: [
     'eslint:recommended',
     'plugin:ember/recommended',
     'plugin:prettier/recommended',
-    'prettier/standard',
+    'prettier/standard'
   ],
   env: {
     browser: true
   },
-  rules: {
-  },
+  rules: {},
   overrides: [
     // node files
     {
       files: [
         '.eslintrc.js',
+        '.prettierrc.js',
         '.template-lintrc.js',
-        'ember-cli-build.js',
-        'testem.js',
         'blueprints/*/index.js',
         'config/**/*.js',
-        'lib/*/index.js'
+        'ember-cli-build.js',
+        'lib/*/index.js',
+        'testem.js'
       ],
       parserOptions: {
         sourceType: 'script',
@@ -40,4 +38,4 @@ module.exports = {
       }
     }
   ]
-};
+}

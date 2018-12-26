@@ -22,4 +22,4 @@ export default {
   bold: 700,
   extrabold: 800,
   black: 900
-};
+}

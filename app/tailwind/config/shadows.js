@@ -21,4 +21,4 @@ export default {
   inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
   outline: '0 0 0 3px rgba(52,144,220,0.5)',
   none: 'none'
-};
+}

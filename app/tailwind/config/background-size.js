@@ -15,4 +15,4 @@ export default {
   auto: 'auto',
   cover: 'cover',
   contain: 'contain'
-};
+}

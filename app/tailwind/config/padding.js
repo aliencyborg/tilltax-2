@@ -29,4 +29,4 @@ export default {
   '20': '5rem',
   '24': '6rem',
   '32': '8rem'
-};
+}

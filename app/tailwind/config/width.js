@@ -47,4 +47,4 @@ export default {
   '5/6': '83.33333%',
   full: '100%',
   screen: '100vw'
-};
+}

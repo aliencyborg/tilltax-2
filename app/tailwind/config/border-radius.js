@@ -20,4 +20,4 @@ export default {
   default: '.25rem',
   lg: '.5rem',
   full: '9999px'
-};
+}

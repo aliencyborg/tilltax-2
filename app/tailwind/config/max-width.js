@@ -24,4 +24,4 @@ export default {
   '4xl': '90rem',
   '5xl': '100rem',
   full: '100%'
-};
+}
