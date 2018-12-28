@@ -28,6 +28,8 @@ import opacity from './opacity'
 import svgFill from './svg-fill'
 import svgStroke from './svg-stroke'
 
+import objectFit from '../plugins/object-fit'
+
 export default {
   colors,
   screens,
@@ -123,9 +125,10 @@ export default {
 
   plugins: [
     container({
-      // center: true,
-      // padding: '1rem',
-    })
+      center: true,
+      padding: '1rem'
+    }),
+    objectFit(['responsive'])
   ],
 
   /*

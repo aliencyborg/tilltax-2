@@ -1,17 +1,25 @@
 <div class="flex flex-row" id="index">
   <div class="flex-1"></div>
   <div class="flex-1 flex flex-col">
-    <div class="flex-1"></div>
-    <div class="flex-grow flex justify-center">
-      {{#link-to "home" class="self-center flex flex-col flex-grow"}}
-        <h1 class="title-font text-5xl self-center">TILL TAX</h1>
-        <h3 class="self-center subtitle-font italic text-2xl">
-          Accounting & Financial Services LLC
-        </h3>
-        <img alt="click to enter" class="flex-1" src="/assets/images/logo.png">
+    <div class="flex-1 lg:flex-initial"></div>
+    <div class="flex-grow flex text-center">
+      {{#link-to "home" class="flex flex-col flex-grow"}}
+        <div class="flex-grow lg:flex-1 flex flex-col">
+          <div class="flex-1"></div>
+          <div class="flex-shrink title-font text-5xl sm:text-6xl xl:text-8xl">TILL TAX</div>
+          <div
+            class="flex-shrink py-2 subtitle-font italic text-xl sm:text-2xl xl:text-4xl"
+          >
+            Accounting & Financial Services LLC
+          </div>
+        </div>
+        <div class="flex flex-col flex-grow lg:flex-1">
+          <img class="object-contain flex-1" alt="Till Tax logo" src="/assets/images/logo.png">
+        </div>
+        <div class="flex-1"></div>
       {{/link-to}}
     </div>
-    <div class="flex-1"></div>
+    <div class="flex-1 lg:flex-initial"></div>
   </div>
   <div class="flex-1"></div>
 </div>
