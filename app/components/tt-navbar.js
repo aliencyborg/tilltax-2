@@ -9,7 +9,6 @@ export default Component.extend({
 
   classNames: [
     'tt-navbar',
-    'bg-orange-darker',
     'flex-wrap',
     'items-center',
     'justify-between',

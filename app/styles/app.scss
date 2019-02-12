@@ -2,6 +2,7 @@
 @import 'fonts';
 
 @import './index';
+@import './home';
 @import './components/tt-navbar';
 
 html {
@@ -12,4 +13,11 @@ html {
       text-decoration-color: unset
     }
   }
+}
+
+.bg-image {
+  background: url('/assets/images/handshake.png') grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
