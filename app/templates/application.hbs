@@ -1,4 +1,10 @@
 <div id="application">
-  {{tt-navbar}}
+  {{#tt-navbar}}
+    {{tt-nav-link "Home" "home"}}
+    {{tt-nav-link "About Us" "about"}}
+    {{tt-nav-link "Contact Us" "contact"}}
+    {{tt-nav-link "Privacy Policy" "privacy"}}
+    {{tt-nav-link "Disclaimer" "disclaimer"}}
+  {{/tt-navbar}}
   {{outlet}}
 </div>

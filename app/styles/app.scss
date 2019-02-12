@@ -7,14 +7,9 @@
 html {
   body {
     a, a:hover {
+      color: unset;
       text-decoration: none;
-      color: black;
+      text-decoration-color: unset
     }
   }
-}
-
-div#application {
-  background-color: white;
-  display: grid;
-  height: 100vh;
 }

@@ -4,9 +4,17 @@ import { computed } from '@ember/object'
 
 export default Component.extend({
   router: service(),
+  classNameBindings: ['isHidden:hidden:flex'],
+  tagName: 'nav',
 
-  classNames: ['tt-navbar'],
-  classNameBindings: ['isHidden:hidden'],
+  classNames: [
+    'tt-navbar',
+    'bg-orange-darker',
+    'flex-wrap',
+    'items-center',
+    'justify-between',
+    'pl-6'
+  ],
 
   isHidden: computed('router.currentRoute', function() {
     const router = this.get('router')

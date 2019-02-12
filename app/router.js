@@ -11,6 +11,8 @@ Router.map(function() {
   this.route('about')
   this.route('home')
   this.route('contact')
+  this.route('privacy')
+  this.route('disclaimer')
 })
 
 export default Router

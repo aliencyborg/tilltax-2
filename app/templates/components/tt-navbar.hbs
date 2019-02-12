@@ -1,2 +1,12 @@
-<h6>tt-navbar</h6>
-{{yield}}
+<div class="flex items-center flex-no-shrink text-white mr-6">
+  <span class="font-semibold text-xl tracking-tight title-font">
+    {{link-to "TillTax" "index"}}
+  </span>
+</div>
+<div class="block lg:hidden">
+</div>
+<div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+  <div class="text-sm lg:flex-grow">
+    {{yield}}
+  </div>
+</div>
