@@ -1,4 +1,4 @@
-<div id="application">
+<div id="application" class="flex flex-col h-full">
   {{#tt-navbar}}
     {{tt-nav-link "Home" "home"}}
     {{tt-nav-link "About Us" "about"}}
@@ -6,5 +6,12 @@
     {{tt-nav-link "Privacy Policy" "privacy"}}
     {{tt-nav-link "Disclaimer" "disclaimer"}}
   {{/tt-navbar}}
-  {{outlet}}
+
+  <div id="content" class="flex flex-1">
+    {{outlet}}
+  </div>
+
+  {{#tt-footer}}
+    I"m a footer
+  {{/tt-footer}}
 </div>

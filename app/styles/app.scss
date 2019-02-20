@@ -10,7 +10,10 @@ html {
     a, a:hover {
       color: unset;
       text-decoration: none;
-      text-decoration-color: unset
+      text-decoration-color: unset;
+    }
+    > .ember-view {
+      height: 100%;
     }
   }
 }
@@ -19,5 +22,5 @@ html {
   background: url('/assets/images/handshake.png') grey;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  // height: 100vh;
 }
