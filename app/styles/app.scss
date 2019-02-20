@@ -3,7 +3,7 @@
 
 @import './index';
 @import './home';
-@import './components/tt-navbar';
+@import './components';
 
 html {
   body {
@@ -16,11 +16,4 @@ html {
       height: 100%;
     }
   }
-}
-
-.bg-image {
-  background: url('/assets/images/handshake.png') grey;
-  background-repeat: no-repeat;
-  background-size: cover;
-  // height: 100vh;
 }
