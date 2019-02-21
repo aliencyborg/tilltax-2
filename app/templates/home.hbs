@@ -1,3 +1,21 @@
-<div id="home">
+<div id="home" class="flex flex-1 flex-col">
+  <div class="flex-1"></div>
+
+  <div class="justify-center flex-1 flex flex-wrap lg:flex-no-wrap lg:m-8 lg:p-2 bg-grey-dark">
+    <TtCard class="bg-grey-lighter" @imgSrc="/assets/images/tt-step1.jpg" @imgAlt="Writing a document" @title="Step 1">
+      Gather your tax documents
+    </TtCard>
+
+    <TtCard class="bg-grey-lighter" @imgSrc="/assets/images/tt-step2.jpg" @imgAlt="Mail in mailboxes" @title="Step 2">
+      Mail, text, or drop-ff documents
+    </TtCard>
+
+    <TtCard class="bg-grey-lighter" @imgSrc="/assets/images/tt-step3.png" @imgAlt="Handshake" @title="Step 3">
+      Review, sign, and e-file your return
+    </TtCard>
+  </div>
+
+  <div class="flex-1"></div>
+
   {{outlet}}
 </div>
