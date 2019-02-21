@@ -1,4 +1,4 @@
-{{#tt-navbar}}
+{{#tt-navbar isVisible=showElements}}
   {{tt-nav-link "Home" "home"}}
   {{tt-nav-link "About Us" "about"}}
   {{tt-nav-link "Contact Us" "contact"}}
@@ -6,13 +6,13 @@
   {{tt-nav-link "Disclaimer" "disclaimer"}}
 {{/tt-navbar}}
 
-{{#tt-sidebar}}
+{{#tt-sidebar isVisible=showElements}}
 {{/tt-sidebar}}
 
 {{#tt-background}}
   {{yield}}
 {{/tt-background}}
 
-{{#tt-footer}}
+{{#tt-footer isVisible=showElements}}
   © 2019 Till Tax Accounting & Financial Services LLC
 {{/tt-footer}}
