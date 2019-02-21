@@ -6,6 +6,7 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    betaSite: process.env.TILLTAX_BETA,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
