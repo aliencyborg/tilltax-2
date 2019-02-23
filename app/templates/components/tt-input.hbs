@@ -1,0 +1,21 @@
+{{#if labelFirst}}
+  <label class="block text-grey-darker text-sm font-bold mb-2" for={{for}}>
+    {{yield}}
+  </label>
+{{/if}}
+
+<input
+  checked={{checked}}
+  class={{inputClass}}
+  id={{id}}
+  name={{name}}
+  placeholder={{placeholder}}
+  type={{type}}
+  value={{value}}
+>
+
+{{#unless labelFirst}}
+  <label class="block flex-1 text-grey-darker text-sm font-bold" for={{for}}>
+    {{yield}}
+  </label>
+{{/unless}}

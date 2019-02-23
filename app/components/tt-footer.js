@@ -10,6 +10,7 @@ export default Component.extend(HiddenOnSplash, {
     'p-4',
     'pin-b',
     'text-center',
+    'text-grey',
     'tt-footer',
     'w-full'
   ]

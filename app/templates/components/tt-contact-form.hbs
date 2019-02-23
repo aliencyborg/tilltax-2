@@ -1,0 +1,48 @@
+<div class="flex font-bold justify-center mb-6 text-xl">
+  {{yield}}
+</div>
+<div class="mb-6">
+  <TtInput @for="form-email" @id="form-email" @placeholder="Email" @type="email" />
+</div>
+<div class="mb-6">
+  <TtInput @for="form-name" @id="form-name" @placeholder="Legal Name" />
+</div>
+<div class="mb-6">
+  <TtInput @for="form-phone" @id="form-phone" @placeholder="Phone Number" @type="phone" />
+</div>
+<div class="mb-6">
+  <p class="my-2">
+    Filing Status
+  </p>
+  <TtInput @for="form-individual" @id="form-individual" @name="filing-status" @type="radio" @value="individual">
+    Individual
+  </TtInput>
+  <TtInput @for="form-business" @id="form-business" @name="filing-status" @type="radio" @value="business">
+    Business
+  </TtInput>
+  <TtInput @for="form-both" @id="form-both" @name="filing-status" @type="radio" @value="both">
+    Both
+  </TtInput>
+</div>
+<div class="mb-6">
+  <p class="my-2">
+    Filing Year(s)
+  </p>
+  <TtInput @for="form-2018" @id="form-2018" @name="filing-status" @type="checkbox" @value="2018">
+    2018
+  </TtInput>
+  <TtInput @for="form-2017" @id="form-2017" @name="filing-status" @type="checkbox" @value="2017">
+    2017
+  </TtInput>
+  <TtInput @for="form-other" @id="form-other" @name="filing-status" @type="checkbox" @value="other">
+    other
+  </TtInput>
+</div>
+<div class="mb-6">
+  State
+</div>
+<div class="flex items-center justify-end">
+  <TtButton>
+    Submit
+  </TtButton>
+</div>
