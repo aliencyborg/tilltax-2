@@ -26,6 +26,7 @@ export default {
   'grey-lighter': '#f1f5f8',
   'grey-lightest': '#f8fafc',
   white: '#ffffff',
+  ivory: '#fffff0',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
