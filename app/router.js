@@ -13,7 +13,7 @@ Router.map(function() {
   this.route('contact')
   this.route('privacy')
   this.route('disclaimer')
-  this.route('thanks');
+  this.route('thanks')
 })
 
 export default Router
