@@ -5,13 +5,12 @@ import { not } from '@ember/object/computed'
 export default Component.extend({
   checked: false,
   for: '',
-  id: '',
   name: '',
   placeholder: '',
   type: 'text',
   value: '',
 
-  classNames: ['flex', 'justify-start'],
+  classNames: ['flex', 'justify-start', 'tt-input'],
   classNameBindings: ['isToggleType:mb-2'],
 
   isToggleType: computed('type', function() {

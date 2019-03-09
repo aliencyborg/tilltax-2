@@ -4,15 +4,15 @@
   </label>
 {{/if}}
 
-<input
-  checked={{checked}}
-  class={{inputClass}}
-  id={{id}}
-  name={{name}}
-  placeholder={{placeholder}}
-  type={{type}}
-  value={{value}}
->
+{{input
+  checked=checked
+  class=inputClass
+  id=for
+  name=name
+  placeholder=placeholder
+  type=type
+  value=value
+}}
 
 {{#unless labelFirst}}
   <label class="block flex-1 text-grey-darker text-sm font-bold" for={{for}}>

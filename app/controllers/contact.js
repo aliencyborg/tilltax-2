@@ -8,7 +8,10 @@ export default Controller.extend({
   actions: {
     doContact: async function(event) {
       event.preventDefault()
-      console.log(this.model)
+      console.log({
+        email: this.model.email,
+        model: this.model
+      })
       try {
         const resp = await this.model.save()
         console.log('model was saved', resp)

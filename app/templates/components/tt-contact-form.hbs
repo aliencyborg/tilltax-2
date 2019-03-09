@@ -2,25 +2,25 @@
   {{yield}}
 </div>
 <div class="mb-6">
-  <TtInput @for="form-email" @id="form-email" @placeholder="Email" @type="email" />
+  <TtInput @for="form-email" @placeholder="Email" @type="email" @value={{model.email}} />
 </div>
 <div class="mb-6">
-  <TtInput @for="form-name" @id="form-name" @placeholder="Legal Name" />
+  <TtInput @for="form-name" @placeholder="Legal Name" @value={{mut model.name}} />
 </div>
 <div class="mb-6">
-  <TtInput @for="form-phone" @id="form-phone" @placeholder="Phone Number" @type="phone" />
+  <TtInput @for="form-phone" @placeholder="Phone Number" @type="phone" @value={{mut model.phone}} />
 </div>
 <div class="mb-6">
   <p class="my-2">
     Filing Status
   </p>
-  <TtInput @for="form-individual" @id="form-individual" @name="filing-status" @type="radio" @value="individual">
+  <TtInput @for="form-individual" @name="filing-status" @type="radio" @value="individual">
     Individual
   </TtInput>
-  <TtInput @for="form-business" @id="form-business" @name="filing-status" @type="radio" @value="business">
+  <TtInput @for="form-business" @name="filing-status" @type="radio" @value="business">
     Business
   </TtInput>
-  <TtInput @for="form-both" @id="form-both" @name="filing-status" @type="radio" @value="both">
+  <TtInput @for="form-both" @name="filing-status" @type="radio" @value="both">
     Both
   </TtInput>
 </div>
@@ -28,13 +28,13 @@
   <p class="my-2">
     Filing Year(s)
   </p>
-  <TtInput @for="form-2018" @id="form-2018" @name="filing-status" @type="checkbox" @value="2018">
+  <TtInput @for="form-2018" @name="filing-status" @type="checkbox" @value="2018">
     2018
   </TtInput>
-  <TtInput @for="form-2017" @id="form-2017" @name="filing-status" @type="checkbox" @value="2017">
+  <TtInput @for="form-2017" @name="filing-status" @type="checkbox" @value="2017">
     2017
   </TtInput>
-  <TtInput @for="form-other" @id="form-other" @name="filing-status" @type="checkbox" @value="other">
+  <TtInput @for="form-other" @name="filing-status" @type="checkbox" @value="other">
     other
   </TtInput>
 </div>
