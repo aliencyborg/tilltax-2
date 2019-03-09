@@ -39,10 +39,18 @@
   </TtInput>
 </div>
 <div class="mb-6">
-  State
+  <p class="my-2">
+    <label for="state-select">State</label>  
+  </p>
+  <select id="state-select">
+    <option value="">Select One:</option>
+    {{#each availableRegions as |region|}}
+      <option value={{region.value}}>{{region.value}}</option>
+    {{/each}}
+  </select>
 </div>
 <div class="flex items-center justify-end">
-  <TtButton>
+  <TtButton type="submit">
     Submit
   </TtButton>
 </div>

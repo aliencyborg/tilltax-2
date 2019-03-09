@@ -2,6 +2,7 @@
   <div class="flex-1 flex md:items-center md:w-1/2">
     <div class="w-full max-w-s">
       <TtContactForm
+        onsubmit={{action "doContact"}}
         @availableRegions={{availableRegions}}
         @availableYears={{availableYears}}
         @model={{model}}

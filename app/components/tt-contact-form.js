@@ -1,12 +1,11 @@
 import Component from '@ember/component'
-import { inject as service } from '@ember/service'
 
 export default Component.extend({
   availableRegions: null,
   availableYears: null,
   model: null,
+  onsubmit: null,
 
-  router: service(),
   tagName: 'form',
 
   classNames: [
@@ -17,12 +16,5 @@ export default Component.extend({
     'shadow-md',
     'tt-contact-form',
     'w-full'
-  ],
-
-  actions: {
-    doContact: async function() {
-      await this.model.save()
-      this.router.transitionTo('thanks')
-    }
-  }
+  ]
 })
