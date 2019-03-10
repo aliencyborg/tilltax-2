@@ -2,53 +2,20 @@
   {{yield}}
 </div>
 <div class="mb-6">
-  <TtInput @for="form-email" @placeholder="Email" @type="email" @value={{model.email}} />
+  <TtInput @for="contact-form-email" @placeholder="Email" @type="email" @value={{model.email}} />
 </div>
 <div class="mb-6">
-  <TtInput @for="form-name" @placeholder="Legal Name" @value={{mut model.name}} />
+  <TtInput @for="contact-form-name" @placeholder="Legal Name" @value={{model.name}} />
 </div>
 <div class="mb-6">
-  <TtInput @for="form-phone" @placeholder="Phone Number" @type="phone" @value={{mut model.phone}} />
+  <TtInput @for="contact-form-phone" @placeholder="Phone Number" @type="phone" @value={{model.phone}} />
 </div>
-<div class="mb-6">
-  <p class="my-2">
-    Filing Status
-  </p>
-  <TtInput @for="form-individual" @name="filing-status" @type="radio" @value="individual">
-    Individual
-  </TtInput>
-  <TtInput @for="form-business" @name="filing-status" @type="radio" @value="business">
-    Business
-  </TtInput>
-  <TtInput @for="form-both" @name="filing-status" @type="radio" @value="both">
-    Both
-  </TtInput>
-</div>
-<div class="mb-6">
-  <p class="my-2">
-    Filing Year(s)
-  </p>
-  <TtInput @for="form-2018" @name="filing-status" @type="checkbox" @value="2018">
-    2018
-  </TtInput>
-  <TtInput @for="form-2017" @name="filing-status" @type="checkbox" @value="2017">
-    2017
-  </TtInput>
-  <TtInput @for="form-other" @name="filing-status" @type="checkbox" @value="other">
-    other
-  </TtInput>
-</div>
-<div class="mb-6">
-  <p class="my-2">
-    <label for="state-select">State</label>  
-  </p>
-  <select id="state-select">
-    <option value="">Select One:</option>
-    {{#each availableRegions as |region|}}
-      <option value={{region.value}}>{{region.value}}</option>
-    {{/each}}
-  </select>
-</div>
+
+{{log model}}
+<TtMultiInput @form={{formId}} @name="contact-form-status" @options={{availableStatuses}} @title="Filing Status" @type="radio" @value={{details.filingStatus}} />
+<TtMultiInput @form={{formId}} @name="contact-form-years" @options={{availableYears}} @title="Filing Years" @value={{details.filingYears}} />
+<TtSelect @form={{formId}} @for="contact-form-region" @options={{availableRegions}} @title="State" @value={{details.filingRegion}} />
+
 <div class="flex items-center justify-end">
   <TtButton type="submit">
     Submit

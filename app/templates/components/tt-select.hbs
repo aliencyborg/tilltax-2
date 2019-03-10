@@ -1,0 +1,14 @@
+<label class="my-2" for={{for}}>
+  {{title}}
+</label>
+
+<div>
+  <select form={{form}} id={{for}} onchange={{action "onchange"}} value={{value}}>
+    {{#each options as |item| }}
+      <option value={{item.value}}>{{item.value}}</option>
+    {{/each}}
+  </select>
+</div>
+<div class="bg-yellow">
+  Value: {{value}}
+</div>

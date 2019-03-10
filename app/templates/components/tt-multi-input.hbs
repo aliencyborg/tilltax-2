@@ -1,0 +1,21 @@
+<fieldset form={{form}}>
+  <legend class="my-2">
+    {{title}}
+  </legend>
+
+  <div class="flex flex-col">
+  {{#each options as |option| }}
+    <TtMultiItem
+      @name={{name}}
+      @onchange={{action 'onchange'}}
+      @selected={{selected}}
+      @type={{type}}
+      @value={{option.value}}
+    >
+      {{or option.title option.value}}
+    </TtMultiItem>
+  {{/each}}
+  </div>
+
+{{yield}}
+</fieldset>

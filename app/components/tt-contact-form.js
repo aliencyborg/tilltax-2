@@ -1,11 +1,14 @@
 import Component from '@ember/component'
+import { alias } from '@ember/object/computed'
 
 export default Component.extend({
-  availableRegions: null,
-  availableYears: null,
-  model: null,
-  onsubmit: null,
+  availableRegions: null, // [{}]
+  availableStatuses: null, // [{}]
+  availableYears: null, // [{}]
+  model: null, // Model
 
+  details: alias('model.details'),
+  formId: alias('id'),
   tagName: 'form',
 
   classNames: [

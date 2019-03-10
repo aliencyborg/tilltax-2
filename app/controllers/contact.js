@@ -1,17 +1,16 @@
 import Controller from '@ember/controller'
-import { availableRegions, availableYears } from 'tilltax/data'
+import { default as data } from 'tilltax/data'
+
+const { availableRegions, availableStatuses, availableYears } = data
 
 export default Controller.extend({
   availableRegions,
+  availableStatuses,
   availableYears,
 
   actions: {
     doContact: async function(event) {
       event.preventDefault()
-      console.log({
-        email: this.model.email,
-        model: this.model
-      })
       try {
         const resp = await this.model.save()
         console.log('model was saved', resp)
