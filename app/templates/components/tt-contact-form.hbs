@@ -2,19 +2,51 @@
   {{yield}}
 </div>
 <div class="mb-6">
-  <TtInput @for="contact-form-email" @placeholder="Email" @type="email" @value={{model.email}} />
+  <TtInput
+    @for="contact-form-email"
+    @placeholder="Email"
+    @type="email"
+    @value={{model.email}}
+  />
 </div>
 <div class="mb-6">
-  <TtInput @for="contact-form-name" @placeholder="Legal Name" @value={{model.name}} />
+  <TtInput
+    @for="contact-form-name"
+    @placeholder="Legal Name"
+    @value={{model.name}}
+  />
 </div>
 <div class="mb-6">
-  <TtInput @for="contact-form-phone" @placeholder="Phone Number" @type="phone" @value={{model.phone}} />
+  <TtInput
+    @for="contact-form-phone"
+    @placeholder="Phone Number"
+    @type="phone"
+    @value={{model.phone}}
+  />
 </div>
 
-{{log model}}
-<TtMultiInput @form={{formId}} @name="contact-form-status" @options={{availableStatuses}} @title="Filing Status" @type="radio" @value={{details.filingStatus}} />
-<TtMultiInput @form={{formId}} @name="contact-form-years" @options={{availableYears}} @title="Filing Years" @value={{details.filingYears}} />
-<TtSelect @form={{formId}} @for="contact-form-region" @options={{availableRegions}} @title="State" @value={{details.filingRegion}} />
+<TtMultiInput
+  @form={{formId}}
+  @name="contact-form-status"
+  @options={{availableStatuses}}
+  @title="Filing Status"
+  @type="radio"
+  @value={{details.filingStatus}}
+/>
+<TtMultiInput
+  @form={{formId}}
+  @name="contact-form-years"
+  @options={{availableYears}}
+  @title="Filing Years"
+  @value={{details.filingYears}}
+/>
+<TtSelect
+  @form={{formId}}
+  @for="contact-form-region"
+  @options={{availableRegions}}
+  @title="State"
+  @value={{details.filingRegion}}
+/>
 
 <div class="flex items-center justify-end">
   <TtButton type="submit">
