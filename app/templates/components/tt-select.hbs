@@ -3,7 +3,7 @@
 </label>
 
 <div>
-  <select form={{form}} id={{for}} onchange={{action (mut value) value="target.value"}}>
+  <select class="px-5 py-1" form={{form}} id={{for}} onchange={{action (mut value) value="target.value"}}>
     {{#each options as |item| }}
       <option value={{item.value}} selected={{eq value item.value}}>{{item.value}}</option>
     {{/each}}
