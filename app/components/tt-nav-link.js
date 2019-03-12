@@ -4,11 +4,11 @@ export default LinkComponent.extend({
   activeClass: 'bg-black text-white hover:text-white',
   classNames: [
     'block',
-    'lg:inline-block',
-    'lg:mt-0',
-    'mr-4',
-    'mt-4',
-    'p-6',
+    'lg:mr-4',
+    'md:inline-block',
+    'md:mt-0',
+    'md:p-6',
+    'p-2',
     'text-black'
   ]
 })
