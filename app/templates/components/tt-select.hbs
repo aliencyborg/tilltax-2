@@ -3,12 +3,9 @@
 </label>
 
 <div>
-  <select form={{form}} id={{for}} onchange={{action "onchange"}} value={{value}}>
+  <select form={{form}} id={{for}} onchange={{action (mut value) value="target.value"}}>
     {{#each options as |item| }}
-      <option value={{item.value}}>{{item.value}}</option>
+      <option value={{item.value}} selected={{eq value item.value}}>{{item.value}}</option>
     {{/each}}
   </select>
-</div>
-<div class="bg-yellow">
-  Value: {{value}}
 </div>

@@ -8,15 +8,5 @@ export default Component.extend({
   title: '',
   value: '',
 
-  classNames: ['flex', 'flex-col', 'tt-select'],
-
-  selected: computed('value', function() {
-    return 'MN'
-  }),
-
-  actions: {
-    onchange(event) {
-      console.log('onchange', event)
-    }
-  }
+  classNames: ['flex', 'flex-col', 'tt-select']
 })
