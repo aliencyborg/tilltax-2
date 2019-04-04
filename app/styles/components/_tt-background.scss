@@ -1,3 +1,7 @@
 #tt-background {
-  background-image: url('/assets/images/handshake.png');
+  -webkit-background-size: cover;
+  background-image: url('/assets/images/tt-bg-crop.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
