@@ -1,3 +1,4 @@
+/* eslint no-console:0 */
 import Controller from '@ember/controller'
 import { default as data } from 'tilltax/data'
 
@@ -14,6 +15,7 @@ export default Controller.extend({
       try {
         const resp = await this.model.save()
         console.log('model was saved', resp)
+        this.transitionToRoute('thanks')
       } catch (err) {
         console.error('model could not be saved', err)
       }
