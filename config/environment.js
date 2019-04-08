@@ -17,6 +17,24 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    // https://github.com/poteto/ember-metrics
+    metricsAdapters: [
+      {
+        name: 'GoogleAnalytics',
+        evironments: ['development', 'production'],
+        config: {
+          id: 'UA-135499270-2',
+          // Use `analytics_debug.js` in development
+          debug: environment === 'development',
+          // Use verbose tracing of GA events
+          trace: environment === 'development',
+          // Ensure development env hits aren't sent to GA
+          sendHitTask: environment !== 'development',
+          // Specify Google Analytics plugins
+          require: []
+        }
+      }
+    ],
 
     APP: {
       // Here you can pass flags/options to your application instance
