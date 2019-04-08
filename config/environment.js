@@ -49,7 +49,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
-    ENV.DS.host = 'https://test-api.tilltax.com'
+    ENV.DS.host = 'https://api.tilltax.com'
   }
 
   return ENV
