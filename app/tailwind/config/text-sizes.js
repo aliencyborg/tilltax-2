@@ -14,6 +14,7 @@
 | prefer, be it rems, ems, pixels or other.
 |
 | Class name: .text-{size}
+| CSS property: font-size
 |
 */
 

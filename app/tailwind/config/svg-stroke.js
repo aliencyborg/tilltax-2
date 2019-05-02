@@ -9,6 +9,7 @@
 | keep the generated CSS file size down.
 |
 | Class name: .stroke-{name}
+| CSS property: stroke
 |
 */
 

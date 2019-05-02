@@ -28,8 +28,6 @@ import opacity from './opacity'
 import svgFill from './svg-fill'
 import svgStroke from './svg-stroke'
 
-import objectFit from '../plugins/object-fit'
-
 export default {
   colors,
   screens,
@@ -59,6 +57,26 @@ export default {
   svgFill,
   svgStroke,
 
+  /*
+  |-----------------------------------------------------------------------------
+  | Modules                  https://tailwindcss.com/docs/configuration#modules
+  |-----------------------------------------------------------------------------
+  |
+  | Here is where you control which modules are generated and what variants are
+  | generated for each of those modules.
+  |
+  | Currently supported variants:
+  |   - responsive
+  |   - hover
+  |   - focus
+  |   - focus-within
+  |   - active
+  |   - group-hover
+  |
+  | To disable a module completely, use `false` instead of an array.
+  |
+  */
+
   modules: {
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],
@@ -86,6 +104,8 @@ export default {
     minHeight: ['responsive'],
     minWidth: ['responsive'],
     negativeMargin: ['responsive'],
+    objectFit: ['responsive'],
+    objectPosition: false,
     opacity: ['responsive'],
     outline: ['focus'],
     overflow: ['responsive'],
@@ -96,6 +116,7 @@ export default {
     shadows: ['responsive', 'hover', 'focus'],
     svgFill: [],
     svgStroke: [],
+    tableLayout: ['responsive'],
     textAlign: ['responsive'],
     textColors: ['responsive', 'hover', 'focus'],
     textSizes: ['responsive'],
@@ -127,8 +148,7 @@ export default {
     container({
       center: true,
       padding: '1rem'
-    }),
-    objectFit(['responsive'])
+    })
   ],
 
   /*

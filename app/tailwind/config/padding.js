@@ -10,6 +10,7 @@
 | values as needed.
 |
 | Class name: .p{side?}-{size}
+| CSS property: padding
 |
 */
 

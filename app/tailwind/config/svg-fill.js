@@ -9,6 +9,7 @@
 | generated CSS file size down.
 |
 | Class name: .fill-{name}
+| CSS property: fill
 |
 */
 

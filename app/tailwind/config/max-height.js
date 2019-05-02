@@ -9,6 +9,7 @@
 | these values as needed.
 |
 | Class name: .max-h-{size}
+| CSS property: max-height
 |
 */
 

@@ -8,6 +8,7 @@
 | values as needed.
 |
 | Class name: .z-{index}
+| CSS property: z-index
 |
 */
 

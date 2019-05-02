@@ -11,6 +11,7 @@
 | a good idea to put it first so other values are able to override it.
 |
 | Class name: .rounded{-side?}{-size?}
+| CSS property: border-radius
 |
 */
 

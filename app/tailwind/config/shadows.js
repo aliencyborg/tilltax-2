@@ -11,6 +11,7 @@
 | suffixed `.shadow` utility.
 |
 | Class name: .shadow-{size?}
+| CSS property: box-shadow
 |
 */
 

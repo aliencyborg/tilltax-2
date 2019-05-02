@@ -9,6 +9,7 @@
 | these values as needed.
 |
 | Class name: .min-w-{size}
+| CSS property: min-width
 |
 */
 

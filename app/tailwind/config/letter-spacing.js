@@ -7,6 +7,7 @@
 | them in Tailwind, tracking.
 |
 | Class name: .tracking-{size}
+| CSS property: letter-spacing
 |
 */
 

@@ -10,6 +10,7 @@
 | values as needed.
 |
 | Class name: .-m{side?}-{size}
+| CSS property: margin
 |
 */
 

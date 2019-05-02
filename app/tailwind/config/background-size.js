@@ -8,6 +8,7 @@
 | that are specific to your project here as well.
 |
 | Class name: .bg-{size}
+| CSS property: background-size
 |
 */
 

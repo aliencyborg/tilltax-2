@@ -9,6 +9,7 @@
 | values as needed.
 |
 | Class name: .min-h-{size}
+| CSS property: min-height
 |
 */
 

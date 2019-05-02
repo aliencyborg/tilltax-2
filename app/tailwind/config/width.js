@@ -15,6 +15,7 @@
 | awesome classes like .w-2/3.
 |
 | Class name: .w-{size}
+| CSS property: width
 |
 */
 
@@ -25,6 +26,7 @@ export default {
   '2': '0.5rem',
   '3': '0.75rem',
   '4': '1rem',
+  '5': '1.25rem',
   '6': '1.5rem',
   '8': '2rem',
   '10': '2.5rem',

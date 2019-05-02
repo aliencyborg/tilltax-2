@@ -8,6 +8,7 @@
 | width that will be used when you do not specify a border width.
 |
 | Class name: .border{-side?}{-width?}
+| CSS property: border-width
 |
 */
 

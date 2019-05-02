@@ -13,6 +13,7 @@
 | provided by the platform.
 |
 | Class name: .font-{name}
+| CSS property: font-family
 |
 */
 

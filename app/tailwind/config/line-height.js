@@ -7,6 +7,7 @@
 | them in Tailwind, leadings.
 |
 | Class name: .leading-{size}
+| CSS property: line-height
 |
 */
 

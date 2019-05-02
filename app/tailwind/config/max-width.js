@@ -10,6 +10,7 @@
 | modify these values as needed.
 |
 | Class name: .max-w-{size}
+| CSS property: max-width
 |
 */
 

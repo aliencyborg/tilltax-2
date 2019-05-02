@@ -8,6 +8,7 @@
 | values as needed.
 |
 | Class name: .opacity-{name}
+| CSS property: opacity
 |
 */
 
