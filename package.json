@@ -1,11 +1,11 @@
 {
   "name": "tilltax",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "private": true,
-  "description": "Small description for tilltax goes here",
-  "repository": "",
+  "description": "Web client for Tilltax.com",
+  "repository": "https://github.com/aliencyborg/tilltax-web.git",
   "license": "MIT",
-  "author": "",
+  "author": "Benjamin Rosas <ben@aliencyb.org>",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -19,12 +19,12 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "@ember/jquery": "^0.6.0",
     "@ember/optional-features": "^0.7.0",
-    "@types/ember-data": "^3.1.7",
+    "@glimmer/component": "^0.14.0-alpha.3",
+    "babel-eslint": "^10.0.1",
     "broccoli-asset-rev": "^3.0.0",
-    "ember-ajax": "^5.0.0",
-    "ember-cli": "~3.9.0",
+    "ember-auto-import": "^1.3.0",
+    "ember-cli": "github:ember-cli/ember-cli#807f56e2e434f716757de02fd1f2c3251dadaf6f",
     "ember-cli-app-version": "^3.2.0",
     "ember-cli-babel": "^7.7.3",
     "ember-cli-dependency-checker": "^3.1.0",
@@ -37,23 +37,31 @@
     "ember-cli-tailwind": "^0.7.0",
     "ember-cli-template-lint": "^1.0.0-beta.1",
     "ember-cli-uglify": "^3.0.0",
-    "ember-data": "~3.9.1",
+    "ember-data": "github:emberjs/data#1df833396855d956b817540923dd89338463fec2",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^2.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-metrics": "^0.13.0",
     "ember-qunit": "^4.4.1",
     "ember-resolver": "^5.1.3",
-    "ember-source": "~3.9.1",
-    "eslint-config-prettier": "^4.2.0",
+    "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/cb4233bf416127d626304fa33ca9125310a7d959.tgz",
     "eslint-plugin-ember": "^6.4.1",
-    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-node": "^8.0.1",
     "loader.js": "^4.7.0",
-    "prettier": "^1.17.0",
     "qunit-dom": "^0.8.5",
     "sass": "^1.19.0"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-config-prettier-standard": "^2.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier": "^1.17.0"
   }
 }
