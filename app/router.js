@@ -9,10 +9,10 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('index', { path: '/' })
   this.route('about')
-  this.route('home')
   this.route('contact')
-  this.route('privacy')
   this.route('disclaimer')
+  this.route('home')
+  this.route('privacy')
   this.route('thanks')
 })
 
