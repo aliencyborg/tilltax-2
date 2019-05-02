@@ -8,11 +8,6 @@ export default Mixin.create({
   isVisible: not('isSplashPage'),
 
   isSplashPage: computed('router.currentRoute', function() {
-    const router = this.router
-    const {
-      currentRoute: { name }
-    } = router
-
-    return name === 'index'
+    return this.router.currentRoute.name === 'index'
   })
 })

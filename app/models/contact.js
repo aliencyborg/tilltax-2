@@ -1,15 +1,17 @@
 import DS from 'ember-data'
+const { Model, attr } = DS
 
-export default DS.Model.extend({
-  email: DS.attr(),
-  name: DS.attr(),
-  phone: DS.attr('phone'),
+export default class ContactModel extends Model {
+  @attr email
+  @attr name
+  @attr('phone') phone
 
-  details: DS.attr('hash', {
+  @attr('hash', {
     defaultValue: () => ({
       filingRegion: 'MN',
       filingStatus: '',
       filingYears: []
     })
   })
-})
+  details
+}
