@@ -6,11 +6,16 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
-    betaSite: process.env.TILLTAX_BETA,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
-        // e.g. 'with-controller': true
+        // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
+        EMBER_NATIVE_DECORATOR_SUPPORT: true,
+        EMBER_METAL_TRACKED_PROPERTIES: true,
+        EMBER_GLIMMER_ANGLE_BRACKET_NESTED_LOOKUP: true,
+        EMBER_GLIMMER_ANGLE_BRACKET_BUILT_INS: true,
+        EMBER_GLIMMER_FN_HELPER: true,
+        EMBER_GLIMMER_ON_MODIFIER: true
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
@@ -39,6 +44,7 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+      betaSite: process.env.TILLTAX_BETA
     },
     DS: {
       host: process.env.API_HOST || 'http://localhost:4000'
