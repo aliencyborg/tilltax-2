@@ -1,6 +1,3 @@
-import Component from '@ember/component'
+import Component from '@glimmer/component'
 
-export default Component.extend({
-  classNames: ['bg-cover', 'bg-image', 'bg-no-repeat', 'flex', 'flex-1'],
-  elementId: 'tt-background'
-})
+export default class TtBackgroundComponent extends Component {}
