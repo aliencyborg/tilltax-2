@@ -10,17 +10,17 @@ module('Integration | Component | tt-sidebar', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`{{tt-sidebar}}`)
+    await render(hbs`<TtSidebar />`)
 
-    assert.dom(this.element).hasText('')
+    assert.equal(this.element.textContent.trim(), '')
 
     // Template block usage:
     await render(hbs`
-      {{#tt-sidebar}}
+      <TtSidebar>
         template block text
-      {{/tt-sidebar}}
+      </TtSidebar>
     `)
 
-    assert.dom(this.element).hasText('template block text')
+    assert.equal(this.element.textContent.trim(), 'template block text')
   })
 })

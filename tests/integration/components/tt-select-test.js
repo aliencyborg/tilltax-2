@@ -10,15 +10,15 @@ module('Integration | Component | tt-select', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`{{tt-select}}`)
+    await render(hbs`<TtSelect />`)
 
     assert.equal(this.element.textContent.trim(), '')
 
     // Template block usage:
     await render(hbs`
-      {{#tt-select}}
+      <TtSelect>
         template block text
-      {{/tt-select}}
+      </TtSelect>
     `)
 
     assert.equal(this.element.textContent.trim(), 'template block text')

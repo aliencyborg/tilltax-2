@@ -10,17 +10,17 @@ module('Integration | Component | tt-contact-form', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`{{tt-contact-form}}`)
+    await render(hbs`<TtContactForm />`)
 
-    assert.dom(this.element).hasText('')
+    assert.equal(this.element.textContent.trim(), '')
 
     // Template block usage:
     await render(hbs`
-      {{#tt-contact-form}}
+      <TtContactForm>
         template block text
-      {{/tt-contact-form}}
+      </TtContactForm>
     `)
 
-    assert.dom(this.element).hasText('template block text')
+    assert.equal(this.element.textContent.trim(), 'template block text')
   })
 })

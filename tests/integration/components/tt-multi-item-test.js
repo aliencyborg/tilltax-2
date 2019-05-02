@@ -10,15 +10,15 @@ module('Integration | Component | tt-multi-item', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`{{tt-multi-item}}`)
+    await render(hbs`<TtMultiItem />`)
 
     assert.equal(this.element.textContent.trim(), '')
 
     // Template block usage:
     await render(hbs`
-      {{#tt-multi-item}}
+      <TtMultiItem>
         template block text
-      {{/tt-multi-item}}
+      </TtMultiItem>
     `)
 
     assert.equal(this.element.textContent.trim(), 'template block text')
