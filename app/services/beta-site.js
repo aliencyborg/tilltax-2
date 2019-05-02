@@ -1,7 +1,7 @@
-import Service from '@ember/service'
-import ENV from 'tilltax/config/environment'
+import Service from '@ember/service';
+import { APP } from 'tilltax/config/environment'
 
-export default Service.extend({
+export default class BetaSiteService extends Service {
   // TODO: read a ?beta query param as well
-  isBeta: ENV.betaSite
-})
+  isBeta: APP.betaSite
+}
