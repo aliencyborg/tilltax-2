@@ -1,6 +1,8 @@
 FROM node:lts-alpine
 
-WORKDIR /usr/src/app
+LABEL maintainer="Benjamin Rosas <ben@aliencyb.org>"
+
+WORKDIR /app/
 
 RUN apk update
 RUN apk add git
@@ -11,6 +13,6 @@ RUN npm ci --silent
 
 COPY . .
 
-RUN ember build --environment=production
+RUN ember build -prod
 
-CMD ["node", "/usr/src/app/fastboot-server.js"]
+CMD ["node", "/app/fastboot-server.js"]

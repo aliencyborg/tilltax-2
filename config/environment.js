@@ -7,6 +7,9 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     betaSite: process.env.TILLTAX_BETA,
+    fastboot: {
+      hostWhitelist: [/^(\w+\.)?tilltax.com$/, /^localhost:\d+$/]
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

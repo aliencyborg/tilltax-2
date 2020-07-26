@@ -1,11 +1,11 @@
 {
   "name": "tilltax",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "Small description for tilltax goes here",
-  "repository": "",
+  "description": "Web client for tilltax.com",
+  "repository": "https://github.com/aliencyborg/tilltax-2",
   "license": "MIT",
-  "author": "",
+  "author": "Benjamin Rosas <ben@aliencyb.org>",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,6 +15,7 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "lint:js:fix": "eslint --fix .",
+    "slowboot": "FASTBOOT_DISABLED=true ember serve",
     "start": "ember serve",
     "test": "ember test"
   },
@@ -29,7 +30,7 @@
     "ember-cli-babel": "^7.7.3",
     "ember-cli-dependency-checker": "^3.2.0",
     "ember-cli-eslint": "^5.1.0",
-    "ember-cli-fastboot": "^2.1.1",
+    "ember-cli-fastboot": "^2.2.3",
     "ember-cli-htmlbars": "^3.0.1",
     "ember-cli-htmlbars-inline-precompile": "^2.1.0",
     "ember-cli-inject-live-reload": "^2.0.1",
@@ -49,12 +50,16 @@
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-ember": "^6.5.1",
     "eslint-plugin-prettier": "^3.1.0",
+    "fastboot": "^3.1.0",
     "loader.js": "^4.7.0",
     "prettier": "^1.17.1",
     "qunit-dom": "^0.8.5",
     "sass": "^1.20.3"
   },
+  "dependencies": {
+    "fastboot-app-server": "^2.0.0"
+  },
   "engines": {
-    "node": "6.* || 8.* || >= 10.*"
+    "node": "10.* || >= 12"
   }
 }
