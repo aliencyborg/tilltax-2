@@ -7,7 +7,7 @@
     homedir: "/home/{{ user }}"
     org: aliencyborg
     repo: tilltax-2
-    user: luis
+    user: hank
     workdir: "{{ homedir }}/code/src/github.com/{{ org }}/{{ repo }}"
 
   tasks:
